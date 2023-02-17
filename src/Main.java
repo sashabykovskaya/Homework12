@@ -14,5 +14,10 @@ public class Main {
         System.out.println(author);
         Book book2 = new Book("Война и мир. Том 2", 1867, author2);
         System.out.println(book2);
+
+        System.out.println(author.hashCode());
+        System.out.println(book2.hashCode());
+        System.out.println("Ежевичное вино == Война и мир " + (book1 == book2));
+        System.out.println("Ежевичное вино.equals(Война и мир) " + book1.equals(book2));
     }
 }
